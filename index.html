@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <script language="javascript" type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="main.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+    <br/>
+    <h1>adsfad</h1>
+    <form class="form-horizontal" onsubmit="return false">
+        <div id="namediv" class="form-group has-feedback">
+            <label  class="control-label col-sm-offset-2 col-sm-2" for="name">Név</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">¤</span>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <span id="namebox" class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div id="emaildiv" class="form-group has-feedback">
+            <label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div id="textdiv" class="form-group has-feedback">
+            <label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>
+            <div class="col-sm-4">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <textarea class="form-control" id="message" rows="6">Ide írd az üzeneted...</textarea>
+                </div>
+                <span id="textbox" class="form-control-feedback" aria-hidden="true"></span>
+            </div>
+        </div>
+        <button id="send" type="submit" class="btn btn-primary col-sm-offset-5 col-sm-2">Küldés</button>
+    </form>
+
+
+</body>
+</html>
