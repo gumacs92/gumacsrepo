@@ -1,0 +1,13 @@
+@font-face{
+    font-family: myHero;
+    src: url('../font/raleway_thin-webfont.eot');
+    src: url('../font/raleway_thin-webfont.woff') format('woff'), url('../font/raleway_thin-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: myHero;
+    font-size:48px;
+    color: black;
+}
