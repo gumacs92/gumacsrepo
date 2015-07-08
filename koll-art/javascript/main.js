@@ -8,6 +8,11 @@ function validateEmail(email) {
     return re.test(email);
 }
 
+$(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+});
+
 $(document).ready(function(){
     $("#send").click(function(){
         //alert($("#message").val());
