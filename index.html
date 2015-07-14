@@ -3,14 +3,68 @@
 <head lang="en">
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/main.js"></script>
+    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" >
+
     <link rel="stylesheet" href="./koll-art/css/main.css" >
     <link rel="stylesheet" href="./koll-art/css/font.css" >
     <meta charset="UTF-8">
-    <title></title>
+    <title>Koll-ART | weblap szerkesztés</title>
+  <!-- Ez a masike  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.carousel').carousel({interval: 4000, pause:"false"});
+        });
+    </script>
+
+
 </head>
-<body>
-<h1> elmentem enni</h1>
+<body data-hijacking="off" data-animation="opacity">
+<div class="container base">
+        <div id="header"> </div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div id="carousel" class="carousel container slide">
+
+                            <ol class="carousel-indicators ">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="active item">
+                                    <img src="./koll-art/images/monitor_kod_glamour.png" >
+                                    <div class="carousel-caption ">
+                                        <h1>A kevesebb még soha nem volt ennyivel több</h1>
+                                        <p><br>Hiszünk benne, hogy letisztult, kreatív termékeink sikeresebbek lehetnek a hétköznapiaknál és az emberek nem fognak átsiklani felettük</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./koll-art/images/monitor_glamour.png" class="img-responsive">
+                                    <div class="carousel-caption">
+                                        <h3>...</h3>
+                                        <p>...</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div id="footer">
+
+
+        </div>
+
+</div>
 </body>
 </html>
