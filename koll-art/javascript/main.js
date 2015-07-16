@@ -20,7 +20,7 @@ $(function(){
         $('#featured ol').append(insertText);
     }
     $('.carousel').carousel({
-        interval:"3000",
+        interval:"7000",
         pause:"false",
     });
 
