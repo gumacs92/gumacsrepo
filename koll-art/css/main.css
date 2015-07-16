@@ -1,152 +1,78 @@
-.body{
-    background-color:white;
-   }
-.body p{
-    font-family: 'Oxygen', sans-serif;
+.navbar-default{
+    background-color: white;
+    border-color:black;
 }
-.navbar-nav {
-    margin: 7.5px -15px;
+.navbar-default .navbar-nav > li > a {
+    color:#000000;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color:#c0c0c0;
+}
+.navbar-right{
+    margin-right: 0px;
+}
+.navbar-default .navbar-brand{
+    color:#000000;
+    font-size:24px;
+}
 
-}
-.navbar-nav > li > a {
-    padding-top:13px;
-    padding-bottom: 10px;
-    line-height: 20px;
+body{
     font-family: 'Oxygen', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     /*Ez se rossz : font-family: 'Open Sans Condensed', sans-serif;*/
-}
-.lines{
-    border-bottom: 1px solid black;
-}
-
-.navbar-default {
-    background-color: inherit;
-    border-bottom: 1px solid black;
-    border-top:none;
-    border-left:none;
-    border-right:none;
-    border-radius: inherit;
-
-
-}
-.navbar-brand
-{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -20px;
-    text-align: center;
-
-}
-.navbar-brand > img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    marin-top:0px;
-    padding-top:-15px;
-    z-index: 999;
-    position: relative;
-    width: 350px;
-}
-
-.form-horizontal{
-    padding-top:15px;
-    padding-bottom:15px;
-
-}
-/*#####DIVEK######*/
-.base{
-
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
 
     animation-name: megjelenes ;
     animation-duration: 4s;
 }
-/*-------END----------*/
-/*#####Effektek######*/
-/*----- sajat -----*/
+.main{
+    padding-top: 70px;
+    width: 100%;
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes megjelenes {
-    0%   { opacity: 0;
-        filter: Alpha(opacity=00);}
-    100% { opacity: 1;
-        filter: Alpha(opacity=100);}
-}
-/* Standard syntax */
-@keyframes megjelenes {
-    0%   {opacity: 0;
-        filter: Alpha(opacity=00);}
-    100% { opacity: 1;
-        filter: Alpha(opacity=100);}
-}
-/*-------END----------*/
-/*-------DIA----------*/
-.carousel {
-    height: 500px;
-
-    overflow: hidden;
-}
-.carousel .item {
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
-}
-.carousel .active.left, .carousel .active.right {
-    left:0;
-    opacity:0;
-    z-index:2;
-}
-.carousel .next, .carousel .prev {
-    left:0;
-    opacity:1;
-    z-index:1;
-    color:black;
-}
-.carousel .item .carousel-caption {
-    display: block;
-    position: absolute;
-    margin-left:auto;
-    magin-rigt:30px;
-    margin-bottom:200px;
-    margin-top:150px;
-
-    width: 500px;
-    z-index: 100;
-    background-color: inherit;
-
-    color: black;
 
 }
-.carousel .item .carousel-caption h1{
+.navbar{
+    background-color: #ffffff;
+    border-radius: 0px;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
     font-family: 'Oxygen', sans-serif;
-    font-size: 28px;
+    font-size: 16px;
 
 }
-.carousel .item .carousel-caption p{
-    font-size: 16px;
-    color:black;
-    text-decoration: none;
+/*Carousel*/
+.carousel-inner{
+    height:380px;
 
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img {
+    line-height: 0;
+    margin-left: 0;
+    margin-right: auto;
+
+}
+.carousel-caption {
+       right: 10%;
+       left: auto;
+       padding-bottom:200px;
+       color:#000000;
+       text-decoration: none;
+       text-shadow: none;
+    position: relative;
 }
 
 .carousel-indicators {
     position: absolute;
-    top:95%;
-
-    left: 85%;
+    bottom: 0px;
+    left:50%;
     z-index: 15;
-    width: 100%;
+
     padding-left: 0;
-    margin-left: 10%;
-    text-align: right;
+    text-align: center;
     list-style: none;
-
-
 }
 .carousel-indicators li {
     display: inline-block;
@@ -168,4 +94,155 @@
     border: 1px solid #000;
     border-radius: 0px;
 }
-/*-------DIA-END----------*/
+/*Carousel Fade*/
+.carousel.fade{
+    opacity: 1;
+    width: 100%;
+
+}
+.carousel.fade .item{
+    transition: opacity ease-out .7s;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 0;
+    top:0;
+    position: absolute;
+    width: 100%;
+    display: block;
+
+}
+/*ha az akarom hogy ez elso mindig megmaradjon */
+/*.carousel.fade .item:first-child{
+    top:auto;
+    opacity: 1;
+    position: relative;
+}*/
+.carousel.fade .item.active{
+    opacity: 1;
+}
+.carousel-control{
+    opacity: 0;
+}
+.carousel-control.right,
+.carousel-control.left{
+    background-image: none;
+}
+
+/**/
+
+
+/*FORMMMM*/
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: inherit;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    border-bottom: 1px solid #000000;
+    border-radius: 0px;
+    -webkit-box-shadow:  none;
+    box-shadow:  none;
+    -webkit-transition: none;
+    -o-transition:  none;
+    transition: none;
+
+}
+textarea{
+resize: none;
+overflow: hidden;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+}
+
+.btn-primary {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 0px;
+
+}
+.btn-primary:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 0px;
+}
+
+/**/
+
+
+
+footer .navbar-default{
+    margin-top:10px;
+    padding-top:10px;
+    padding-left:15px;
+    padding-right:15px;
+    font-size: 12px;
+    border-top:1px solid #000000;
+    border-bottom:0px;
+    color:black;
+
+}
+footer a{
+    color:#c0c0c0;
+}
+/*#####Effektek######*/
+/*----- sajat -----*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes megjelenes {
+    0%   { opacity: 0;
+        filter: Alpha(opacity=00);}
+    100% { opacity: 1;
+        filter: Alpha(opacity=100);}
+}
+/* Standard syntax */
+@keyframes megjelenes {
+    0%   {opacity: 0;
+        filter: Alpha(opacity=00);}
+    100% { opacity: 1;
+        filter: Alpha(opacity=100);}
+}
+
+.kollar{
+    background-image: url(../images/logo_kozep_black.png);
+    height: 100%;
+    opacity: 1;
+    -webkit-animation-name: eltunes ; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+
+    animation-name: eltunes ;
+    animation-duration: 2s;
+
+}
+
+@-webkit-keyframes eltunes {
+    0%   { opacity: 1;
+        filter: Alpha(opacity=100);}
+    100% { opacity: 0;
+        filter: Alpha(opacity=00);}
+}
+/* Standard syntax */
+@keyframes eltunes {
+    0%   {opacity: 1;
+        filter: Alpha(opacity=100);}
+    100% { opacity: 0;
+        filter: Alpha(opacity=00);}
+}
+
+/*-------END----------*/

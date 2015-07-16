@@ -9,9 +9,23 @@ function validateEmail(email) {
 }
 
 $(function(){
+    //beincludeolas
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+
+    //carousel diavetiteshez
+    var slideqty = $('#featured .item').length;
+    for(var i = 0; i < slideqty; i++){
+        var insertText='<li data-target="#featured" data-slide-to="' + i+ '"></li>';
+        $('#featured ol').append(insertText);
+    }
+    $('.carousel').carousel({
+        interval:"3000",
+        pause:"false",
+    });
+
 });
+
 
 $(document).ready(function(){
     $("#send").click(function(){
@@ -52,3 +66,4 @@ $(document).ready(function(){
         });
     });
 });
+
