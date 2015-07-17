@@ -34,6 +34,7 @@ body{
     /*Ez se rossz : font-family: 'Open Sans Condensed', sans-serif;*/
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+/ / TODO többi böngész?
 
     animation-name: megjelenes ;
     animation-duration: 4s;
@@ -265,10 +266,14 @@ footer a{
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes megjelenes {
-    0%   { opacity: 0;
-        filter: Alpha(opacity=00);}
-    100% { opacity: 1;
-        filter: Alpha(opacity=100);}
+    0% {
+        opacity: 0;
+        filter: Alpha(opacity=00);
+    }
+    100% {
+        opacity: 1;
+        filter: Alpha(opacity=100);
+    }
 }
 /* Standard syntax */
 @keyframes megjelenes {
@@ -277,6 +282,18 @@ footer a{
     100% { opacity: 1;
         filter: Alpha(opacity=100);}
 }
+
+/* ---------JAVASCRIPT TESZTHEZ----------
+@-webkit-keyframes atfest {
+    0%   { background-color: white;}
+    100% { background-color: black;}
+}
+
+@keyframes atfest {
+    0%   { background-color: white;}
+    100% { background-color: black;}
+}
+*/
 
 /*Probalkozas*/
 .kollar{
