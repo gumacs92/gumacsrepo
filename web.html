@@ -5,6 +5,18 @@
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/main.js"></script>
     <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
     <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            web();
+        })
+        $(window).scroll(function () {
+            web();
+        });
+        $(window).bind("onresize", function () {
+            web();
+        });
+    </script>
+
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
     <!-- TODO:meghal az animacio  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" > -->
     <link rel="stylesheet" href="./koll-art/css/main.css" >
@@ -20,11 +32,9 @@
 <div class="container">
     <div id="header"> </div>
     <div class="main container">
-        <div class="row">
-            <div class="col-sm-3">
+        <div class="row" id="story1">
+            <div class="col-sm-4">
                 <h2>A küldetésünk</h2>
-            </div>
-            <div class="col-sm-9">
                 <p>
                     A küldetésünk, hogy egy olyan felhasználói élményt nyújtsunk Önnek és Ügyfeleinek,
                     ami képes megalapozni egy stabil ügyfél-partner kapcsolatot. Ez nem kíván több
@@ -34,28 +44,38 @@
                     felhasználókat visszatérő ügyfelekké avanzsáljuk.
                 </p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <h2>Az élmény</h2>
+            <div class="col-sm-8">
+                <figure class="hero1">
+                    <div class="webimage1"></div>
+                </figure>
             </div>
-            <div class="col-sm-9">
+        </div>
+        <div class="row" id="story2">
+            <div class="col-sm-8">
+                <figure class="hero2">
+                    <div class="webimage2"></div>
+                </figure>
+            </div>
+            <div class="col-sm-4">
+                <h2>Az élmény</h2>
+
                 <p>
                     A weboldalunkat úgy építettük fel, hogy Ön mint az ügyfelünk, képes legyen a legmélyebbrehatóbb
                     részletekig tájékozódni a weboldal létrehozásának folyamatáról. Ezenkívül létrehoztunk egy olyan
                     felületet teremteni ami nem csak a részletekbemenően képes tájékoztatást nyújtani, hanem
-                    személyreszabási felületet is biztosít. Ezt úgy érjük el, hogy Ön képes a fejlesztés menetébe beleszólni,
+                    személyreszabási felületet is biztosít. Ezt úgy érjük el, hogy Ön képes a fejlesztés menetébe
+                    beleszólni,
                     így bármikor ha úgy érzi, hogy megváltoztatna valamit, akkor csak jeleznie kell felénk és mi ennek
                     megfelelően folytatjuk oldala létrehozását. ~~~~Itt Ön dönt, de mi segítünk eligazódni, hogy
                     a létező legjobb élményt nyújtsúk Ügyfeleinek.
                 </p>
             </div>
+
         </div>
-        <div class="row">
+        <div class="row" id="story3">
             <div class="col-sm-3">
                 <h2>A technológia</h2>
-            </div>
-            <div class="col-sm-9">
+
                 <p>
                     Az együttmükődésünk során, mindig odafigyelünk, hogy a legkorszerübb technológia eljárásokkat
                     használva készítsük el A Weboldalt, megőrizve a vezető trendek által biztosított előnyőket.
@@ -71,6 +91,11 @@
                     segítségével igyekeznek a lehető leghamarabb a lehető legtöbbet kihozni a Ön igényéből.
 
                 </p>
+            </div>
+            <div class="col-sm-8">
+                <figure class="hero3">
+                    <div class="webimage3"></div>
+                </figure>
             </div>
         </div>
     </div>

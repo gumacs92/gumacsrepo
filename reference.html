@@ -5,10 +5,22 @@
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/main.js"></script>
     <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
     <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            reference();
+        })
+        $(window).scroll(function () {
+            reference();
+        });
+        $(window).bind("onresize", function () {
+            reference();
+        });
+    </script>
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
   <!-- TODO:meghal az animacio  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" > -->
     <link rel="stylesheet" href="./koll-art/css/main.css" >
+    <link rel="stylesheet" href="./koll-art/css/animate.css">
     <link rel="stylesheet" href="./koll-art/css/font.css" >
 
     <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -21,10 +33,10 @@
     <div class="container ">
         <div id="header"></div><!--header-->
         <div class="main container">
-
-            <h1>Kiemelt munkáink</h1><br>
-
             <div class="row" id="ref1">
+
+                <h1>Kiemelt munkáink</h1><br>
+
                 <div class="col-sm-6 ">
                     <img class="img-responsive" src="koll-art/images/ref/glamour.jpg" alt=""  >
                 </div><!--bal-->

@@ -294,17 +294,6 @@ footer a{
         filter: Alpha(opacity=100);}
 }
 
-/* ---------JAVASCRIPT TESZTHEZ----------
-@-webkit-keyframes atfest {
-    0%   { background-color: white;}
-    100% { background-color: black;}
-}
-
-@keyframes atfest {
-    0%   { background-color: white;}
-    100% { background-color: black;}
-}
-*/
 
 /*Probalkozas*/
 .kollar{
@@ -334,3 +323,86 @@ footer a{
 }
 
 /*-------END----------*/
+
+/*GELLÉRT MÜVE*/
+
+/* ---------JAVASCRIPT TESZTHEZ----------*/
+/*@-webkit-keyframes atfest {
+    0%   { background-color: white;}
+    100% { background-color: black;}
+}
+
+@keyframes atfest {
+    0%   { background-color: white;}
+    100% { background-color: black;}
+}*/
+
+.bevleft {
+    -webkit-animation-name: fadeInLeft;
+    -webkit-animation-duration: 2s;
+
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
+}
+
+.bevdown {
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: 2s;
+
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+}
+
+.bevright {
+    -webkit-animation-name: fadeInRight;
+    -webkit-animation-duration: 2s;
+
+    animation-name: fadeInRight;
+    animation-duration: 2s;
+}
+
+/*TODO a képeket majd le kell cserélni mert csak tesztnek vannak bennt*/
+/*TODO illetve azt is meg kell csinálni, hogy a parallax hatásnál a lejjebb lév? kép az ne tünjön el, ha kilép borderb?l*/
+.webimage1 {
+    background: url("../images/tesztkep1.png");
+    background-repeat: no-repeat;
+    width: 509px;
+    height: 438px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webimage2 {
+    background: url("../images/littleplaceholder.png"), url("../images/tesztkep2.png");
+    background-repeat: no-repeat, no-repeat;
+    width: 925px;
+    height: 618px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webimage3 {
+    background: url("../images/tesztkep3.png");
+    background-repeat: no-repeat;
+    width: 750px;
+    height: 489px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Ez csak kisérletezésre volt, ha nem kell akkor lehet törölni, mert a lényeget a webimage-ek intézik*/
+.hero1 {
+    position: relative;
+    overflow: visible;
+}
+
+.hero2 {
+    position: relative;
+    overflow: visible;
+}
+
+.hero3 {
+    position: relative;
+    overflow: visible;
+}
+
