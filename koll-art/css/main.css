@@ -46,7 +46,9 @@ body{
 .kozepso{
     padding-top:100px;
 }
-
+.alja{
+    padding-bottom:50px;
+}
 /*########*/
 /*Tablet mod*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -62,6 +64,7 @@ body{
         font-size: 28px;
     }
 }
+/*mobil mod*/
 @media (max-width: 767px) {
     .main{
         padding-top: 50px;
@@ -103,6 +106,14 @@ body{
         margin-left:0px;
         margin-right:auto;
 
+    }
+    .img-responsive{
+        display: block;
+        height: auto;
+        max-width: 100%;
+        margin-left:0%;
+        padding-top:auto;
+        padding-botom:auto;
     }
 }
 

@@ -31,56 +31,62 @@
 
 
         <div class="container main">
-            <p class="text-center"> Már csak egy lépés a cél előtt</p>
-
+            <h1 class="text-center"> Kérdése támadt?</h1>
+            <h2 class="text-center">Küldje el üzenetét webes felületünkön</h2>
+            <br>
             <div class="row">
-            <div class="col-sm-6">
-                    <p>Információ</p>
-            </div>
-
-            <div class="col-sm-6">
-
-                <form class="form-horizontal" onsubmit="return false">
-                    <div id="namediv" class="form-group has-feedback">
-                        <!--<label  class="control-label col-sm-offset-2 col-sm-2" for="name">Név</label>-->
-                            <div class="input-group col-xs-8 col-md-6">
-                                <!--<span class="input-group-addon">¤</span>-->
-                                <input type="text" class="form-control" id="name" placeholder="Név">
-                            <span id="namebox" class="form-control-feedback" aria-hidden="true"></span>
+                <div class="col-sm-3">  </div>
+                    <div class="col-sm-6" >
+                        <form class="form-horizontal " onsubmit="return false">
+                            <div id="namediv" class="form-group has-feedback">
+                                <!--<label  class="control-label col-sm-offset-2 col-sm-2" for="name">Név</label>-->
+                                    <div class="input-group col-xs-8 col-md-6">
+                                        <!--<span class="input-group-addon">¤</span>-->
+                                        <input type="text" class="form-control" id="name" placeholder="Név *">
+                                    <span id="namebox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
                             </div>
-                    </div>
-                    <div id="emaildiv" class="form-group has-feedback">
-                        <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
+                            <div id="emaildiv" class="form-group has-feedback">
+                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="email">Email</label>-->
 
-                            <div class="input-group col-xs-8 col-md-6">
-                                <!--<span class="input-group-addon">@</span>-->
-                                <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                 <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
+                                    <div class="input-group col-xs-8 col-md-6">
+                                        <!--<span class="input-group-addon">@</span>-->
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail *">
+                                         <span id="emailbox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
                             </div>
 
-                    </div>
-                    <div id="textdiv" class="form-group has-feedback">
-                        <!--<label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>-->
-                            <div class="input-group col-xs-12 col-md-12">
-                                <!--<span class="input-group-addon">$</span>-->
-                                <textarea class="form-control" id="message" rows="1" placeholder="Ide írd az üzentet" onkeyup="adjust_textarea(this)" ></textarea>
-                                <span id="textbox" class="form-control-feedback" aria-hidden="true"></span>
+                            <div id="textdiv" class="form-group has-feedback">
+                                <!--<label class="control-label col-sm-offset-2 col-sm-2" for="message">Üzenet</label>-->
+                                    <div class="input-group col-xs-12 col-md-12">
+                                        <!--<span class="input-group-addon">$</span>-->
+                                        <textarea class="form-control" id="message" rows="1" placeholder="Ide írd az üzentet *" onkeyup="adjust_textarea(this)" ></textarea>
+                                        <span id="textbox" class="form-control-feedback" aria-hidden="true"></span>
+                                    </div>
                             </div>
-                    </div>
-                    <button id="send" type="submit" class="btn btn-primary col-xs-4 col-md-4" onclick="onbtnclick();">
-                        Küldés
-                    </button>
-                </form>
+                            <div class="text-center"><button id="send" type="submit" class="btn btn-primary">Küldés</button></div>
 
-            </div>
+                        </form>
 
-            </div>
+                        <br>
+                        <p>
+                            <small>* A csillaggal jelölt mezők kitöltése kötelező</small>
+                            <br>
+                            <small>
+                                A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
+                            </small>
+                        </p>
+                    </div><!--col-sm-6-->
+                    <div class="col-sm-3">  </div>
+            </div><!--row-->
+
             <p><br> </p>
 
-        </div>
+        </div><!--main-->
 
+<!-- <div class="alja">  </div>-->
 
-        <div id="footer"></div>
-    </div>
+    </div><!--container-->
+    <div id="footer"></div>
 </body>
 </html>
