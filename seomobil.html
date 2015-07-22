@@ -3,64 +3,133 @@
 <head lang="en">
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/jquery-2.1.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="./koll-art/javascript/main.js"></script>
-    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
-    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >
-    <!-- TODO:meghal az animacio  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" > -->
-    <link rel="stylesheet" href="./koll-art/css/main.css" >
-    <link rel="stylesheet" href="./koll-art/css/font.css" >
+    <!--<script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>-->
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            index();
+        })
+    </script>
+    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" >-->
+    <!--<link rel="stylesheet" href="./bootstrap/css/bootstrap.css" >-->
 
-    <link href='http://fonts.googleapis.com/css?family=Oxygen:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.css.map">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/npm.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./koll-art/css/animate.css">
+    <link rel="stylesheet" href="./koll-art/css/main.css" >
+    <!--<link rel="stylesheet" href="./koll-art/css/font.css" >-->
+
 
     <meta charset="UTF-8">
-    <title>SEO & Mobil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Koll-ART | SEO & Mobil optimalizálás</title>
 </head>
 
 <body>
-<div class="container base">
+<div class="container ">
     <div id="header"> </div>
+    <div class="main">
 
-    <div id="footer"></div>
+        <div class="mobil row">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h1>Bárhol Bármikor </h1>
+
+                <h2>A megjelenés tökéletes </h2>
+
+                <p class="text-center">
+                    <img class="kozkep" src="koll-art/images/tablet_slide.png" alt=""><br>
+                    Mára többen és több weblapot néznek meg mobilról és tabletről mint más készülékről.
+                    A korszakalkotó responsive technológiát alkalmazva Weboldala ugyan úgy tökéletesen jelenik ezeken a
+                    készülékeken
+                    mint ha FullHD vagy 4K felbontású asztali gépről nézné.
+                </p>
+
+            </div>
+            <!--col-sm-offset-2 col-sm-8 text-center-->
+        </div>
+        <!--mobil row-->
+        <br><br><br>
+
+        <div class="gyors row">
+            <div class="col-sm-offset-2 col-sm-4">
+                <h1>Gyors</h1>
+
+                <h2>Hisz így terveztük</h2>
+
+                <p>
+                    Amikor weboldalán dolgozunk, céljaink bizonyos értelemben ellentmondások:
+                    egyrészt roppant gyorsasággal szeretnénk felruházni,
+                    másrészt művészi megjelenést szeretnénk kialakítani, hogy megragadja ügyfeleit.
+                    Ha 3 secundumnál több idő kell oldala betöltéséhez a látogatók 25%-át azonnal elveszti.
+                    Ezt nem engedhetjük meg.
+                </p>
+
+            </div>
+            <!--col-sm-offset-2 col-sm-4-->
+            <div class="col-sm-4">
+                <img class="" src="koll-art/images/speed_right.png" alt="">
+            </div>
+        </div>
+        <!--gyors row-->
+        <br><br><br>
+
+        <div class="seo row">
+            <div class="col-sm-offset-1 col-sm-4">
+                <img class="" src="koll-art/images/seo.png" alt="">
+
+            </div>
+            <div class="col-sm-offset-1 col-sm-4">
+                <br><br>
+
+                <h1>SEO</h1>
+
+                <h2>Nem bújocskázni akarunk</h2>
+
+                <p>
+                    Bár a Google oldalak milliárdjait térképezi fel, a felhasználók csupán csak a második oldalig
+                    lapoznak.
+                    Éppen ezért a fejlesztés közbe arra is törekszünk, hogy Google-barát webhelyet hozzunk létre.
+                    Biztosítva ezzel Önnek, hogy jövendőbeli ügyfelei megtalálják.
+
+                </p>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="socialmarketing row">
+            <div class="col-sm-offset-2 col-sm-8 text-center">
+                <h1>Social Marketing</h1>
+
+                <h2>Az elengedhetetlen láncszem</h2>
+
+                <p>
+                    Az elengedhetetlen láncszem
+                    A Deloitte felmérése szerint 2014-ben a Facebook hatása a globális gazdaságra több, mint 225
+                    milliárd dollár, és 4.5 millió új munkahely létrehozásában segített.
+                </p>
+                <img class="" src="https://fbstatic-a.akamaihd.net/rsrc.php/v2/yx/r/pyNVUg5EM0j.png" alt="" about="">
+
+                <h3>Ön miért hagyná ki?</h3>
+
+            </div>
+        </div>
+
+    </div>
+    <!--main-->
+
 </div>
+<div id="footer"></div>
 </body>
 </html>
 
-<!--SZÖVEGEK
-
-Vázlat:
-Responsive
-
-Bárhol Bármikor
-A megjelenés tökéletes
-Mára többen és több weblapot néznek meg mobilról és tabletről mint más készülékről.
-A korszakalkotó responsive technológiát alkalmazva Weboldala ugyan úgy tökéletesen jelenik ezeken a készülékeken
-mint ha FullHD vagy 4K felbontású asztali gépről nézné.
-
-gyorsaság
-Gyors
-Hisz így terveztük
-Amikor weboldalán dolgozunk, céljaink bizonyos értelemben ellentmondások:
-egyrészt roppant gyorsasággal szeretnénk felruházni,
-másrészt művészi megjelenést szeretnénk kialakítani, hogy megragadja ügyfeleit.
-
-seo
-Mivel nem bújocskázni akarunk
-
-
-Social Marketing
-Az elengedhetetlen láncszem
-A Deloitte felmérése szerint 2014-ben a Facebook hatása a globális gazdaságra több, mint 225 milliárd dollár, és 4.5 millió új munkahely létrehozásában segített.
-
-
-
-
-
-
-
-
-
-
-
-
-
--->
