@@ -308,18 +308,32 @@ footer a{
 
 }
 
+.kozkep {
+    position: relative;
+    top: -20px;
+    -webkit-animation-name: eltunes; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    transform: perspective(640px) rotatex(45deg);
+    animation-name: eltunes;
+    animation-duration: 2s;
+}
+
 @-webkit-keyframes eltunes {
-    0%   { opacity: 1;
-        filter: Alpha(opacity=100);}
-    100% { opacity: 0;
-        filter: Alpha(opacity=00);}
+    0% {
+        transform: perspective(640px) rotatex(0deg);
+    }
+    100% {
+        transform: perspective(640px) rotatex(45deg);
+    }
 }
 /* Standard syntax */
 @keyframes eltunes {
-    0%   {opacity: 1;
-        filter: Alpha(opacity=100);}
-    100% { opacity: 0;
-        filter: Alpha(opacity=00);}
+    0% {
+        transform: perspective(640px) rotatex(0deg);
+    }
+    100% {
+        transform: perspective(640px) rotatex(45deg);
+    }
 }
 
 /*-------END----------*/
@@ -364,12 +378,23 @@ footer a{
 /*TODO a képeket majd le kell cserélni mert csak tesztnek vannak bennt*/
 /*TODO illetve azt is meg kell csinálni, hogy a parallax hatásnál a lejjebb lév? kép az ne tünjön el, ha kilép borderb?l*/
 .webimage1 {
-    background: url("../images/tesztkep1.png");
+    background: url("../images/fodrasz3.jpg");
     background-repeat: no-repeat;
-    width: 509px;
-    height: 438px;
+    width: 600px;
+    height: 458px;
     margin-left: auto;
     margin-right: auto;
+    transform: perspective(600px) rotateY(30deg);
+}
+
+.webimage5 {
+    background: url("../images/box.jpg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 337px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: perspective(600px) rotateY(-30deg);
 }
 
 .webimage2 {
@@ -382,10 +407,10 @@ footer a{
 }
 
 .webimage3 {
-    background: url("../images/tesztkep3.png");
+    background: url("../images/optimalizalas.png");
     background-repeat: no-repeat;
-    width: 750px;
-    height: 489px;
+    width: 500px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
 }
