@@ -147,6 +147,6 @@ function reference() {
 }
 
 function web() {
-    moveBackground();
+    //moveBackground();
 }
 

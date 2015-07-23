@@ -59,15 +59,9 @@ body{
     animation-name: megjelenes ;
     animation-duration: 4s;
 }
-.main{
-    padding-top: 70px;
-    width: 100%;
-}
+
 .kozepso{
     padding-top:100px;
-}
-.alja{
-    padding-bottom:50px;
 }
 /*########*/
 /*Tablet mod*/
@@ -395,28 +389,7 @@ footer a{
     animation-duration: 2s;
 }
 
-/*TODO a képeket majd le kell cserélni mert csak tesztnek vannak bennt*/
-/*TODO illetve azt is meg kell csinálni, hogy a parallax hatásnál a lejjebb lév? kép az ne tünjön el, ha kilép borderb?l*/
-.webimage1 {
-    background: url("../images/fodrasz3.jpg");
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 458px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: perspective(600px) rotateY(30deg);
-}
-
-.webimage5 {
-    background: url("../images/box.jpg");
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 337px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: perspective(600px) rotateY(-30deg);
-}
-
+/*
 .webimage2 {
     background: url("../images/littleplaceholder.png"), url("../images/tesztkep2.png");
     background-repeat: no-repeat, no-repeat;
@@ -424,30 +397,158 @@ footer a{
     height: 618px;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
-.webimage3 {
+.webimage4 {
     background: url("../images/optimalizalas.png");
     background-repeat: no-repeat;
     width: 500px;
-    height: 600px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*Ez csak kisérletezésre volt, ha nem kell akkor lehet törölni, mert a lényeget a webimage-ek intézik*/
-.hero1 {
-    position: relative;
-    overflow: visible;
+/*-------------------------PARALLAX-------------------------------*/
+
+.main {
+    padding-top: 70px;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.hero2 {
-    position: relative;
-    overflow: visible;
+.mainparallax {
+    /*ugyanaz mint a main*/
+    padding-top: 70px;
+    height: 100vh;
+    /*parallax innent?l*/
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 
-.hero3 {
-    position: relative;
-    overflow: visible;
+.container {
+    height: auto;
 }
 
+/*Egy parallax group rész nagysága és ami megmondja hogy ? parallax*/
+.parallax {
+    position: relative;
+    height: 100vh;
+}
+
+/*ha valamit nem akarunk, hogy csússzon, vagy el?térben legyen*/
+.parallaxnot {
+    transform: translateZ(0);
+    z-index: 0;
+}
+
+.parallax .textjobb {
+    transform: translateZ(-592px) scale(1.592) translate(122px);
+    z-index: -1;
+}
+
+.parallax .textbal {
+    transform: translateZ(-592px) scale(1.592) translate(-122px);
+    z-index: -1;
+}
+
+/*keplet: 1 + (translateZ * -1) / perspective  */
+.parallax .webimage1 {
+    background-repeat: no-repeat;
+    border-radius: 0% 10% 10% 0%;
+    width: 600px;
+    height: 458px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/fodrasz3.jpg");
+    transform: rotateY(30deg) translateZ(-592px) scale(1.592) translate(122px);
+    z-index: -1;
+}
+
+.parallax .webimage2 {
+    background-repeat: no-repeat;
+    border-radius: 10% 0% 0% 10%;
+    width: 600px;
+    height: 337px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/box.jpg");
+    transform: rotateY(-30deg) translateZ(-592px) scale(1.592) translate(-122px);
+    z-index: -1;
+}
+
+/*WEB.HTML OLDAL PARALLAX HATÁSA*/
+/*MOBIL*/
+/*TODO OPTIMALIZÁLNI leginkább a képeket mert azok nem férnek be*/
+@media (max-width: 767px) {
+    .parallaxnot,
+    .parallax .textjobb,
+    .parallax .textbal,
+    .parallax .webimage1,
+    .parallax .webimage2 {
+        transform: translateZ(0);
+        z-index: 0;
+    }
+
+    .parallax .webimage1 {
+        background-repeat: no-repeat;
+        border-radius: 0;
+        width: 600px;
+        height: 458px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/fodrasz3.jpg");
+    }
+
+    .parallax .webimage2 {
+        background-repeat: no-repeat;
+        border-radius: 0;
+        width: 600px;
+        height: 337px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/box.jpg");
+    }
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .parallaxnot,
+    .parallax .textjobb,
+    .parallax .textbal,
+    .parallax .webimage1,
+    .parallax .webimage2 {
+        transform: translateZ(0);
+        z-index: 0;
+    }
+
+    .parallax .webimage1 {
+        background-repeat: no-repeat;
+        border-radius: 0;
+        width: 600px;
+        height: 458px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/fodrasz3.jpg");
+    }
+
+    .parallax .webimage2 {
+        background-repeat: no-repeat;
+        border-radius: 0;
+        width: 600px;
+        height: 337px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url("../images/box.jpg");
+    }
+}
+
+/*
+#mobilwebimage1 {
+    animation: slideInRight;
+    animation-delay: 2s;
+}
+*/
