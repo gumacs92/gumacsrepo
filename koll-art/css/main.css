@@ -1,5 +1,198 @@
+/*szövegek helyezgetése*/
+.text-left-not-xs, .text-left-not-sm, .text-left-not-md, .text-left-not-lg {
+    text-align: left;
+}
+
+.text-center-not-xs, .text-center-not-sm, .text-center-not-md, .text-center-not-lg {
+    text-align: center;
+}
+
+.text-right-not-xs, .text-right-not-sm, .text-right-not-md, .text-right-not-lg {
+    text-align: right;
+}
+
+.text-justify-not-xs, .text-justify-not-sm, .text-justify-not-md, .text-justify-not-lg {
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .text-left-not-xs, .text-center-not-xs, .text-right-not-xs, .text-justify-not-xs {
+        text-align: inherit;
+    }
+
+    .text-left-xs {
+        text-align: left;
+    }
+
+    .text-center-xs {
+        text-align: center;
+    }
+
+    .text-right-xs {
+        text-align: right;
+    }
+
+    .text-justify-xs {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-left-not-sm, .text-center-not-sm, .text-right-not-sm, .text-justify-not-sm {
+        text-align: inherit;
+    }
+
+    .text-left-sm {
+        text-align: left;
+    }
+
+    .text-center-sm {
+        text-align: center;
+    }
+
+    .text-right-sm {
+        text-align: right;
+    }
+
+    .text-justify-sm {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .text-left-not-md, .text-center-not-md, .text-right-not-md, .text-justify-not-md {
+        text-align: inherit;
+    }
+
+    .text-left-md {
+        text-align: left;
+    }
+
+    .text-center-md {
+        text-align: center;
+    }
+
+    .text-right-md {
+        text-align: right;
+    }
+
+    .text-justify-md {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-left-not-lg, .text-center-not-lg, .text-right-not-lg, .text-justify-not-lg {
+        text-align: inherit;
+    }
+
+    .text-left-lg {
+        text-align: left;
+    }
+
+    .text-center-lg {
+        text-align: center;
+    }
+
+    .text-right-lg {
+        text-align: right;
+    }
+
+    .text-justify-lg {
+        text-align: justify;
+    }
+}
+
+/*ARAK*/
+/* COMMON PRICING STYLES */
+.panel.price,
+.panel.price > .panel-heading {
+    border-radius: 0px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.panel.price:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
+}
+
+.panel.price:hover > .panel-heading {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .2) inset;
+}
+
+.panel.price > .panel-heading {
+    box-shadow: 0px 5px 0px rgba(50, 50, 50, .2) inset;
+    text-shadow: 0px 3px 0px rgba(50, 50, 50, .6);
+}
+
+.price .list-group-item {
+    border-bottom-: 1px solid rgba(250, 250, 250, .5);
+}
+
+.panel.price .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.panel.price .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.price .panel-footer {
+    color: #fff;
+    border-bottom: 0px;
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, .3);
+}
+
+.panel.price .btn {
+    box-shadow: 0 -1px 0px rgba(50, 50, 50, .2) inset;
+    border: 0px;
+}
+
+/*xxxxx*/
+.price.panel-white > .panel-heading {
+    color: #333;
+    background-color: #f9f9f9;
+    border-color: #ccc;
+    border-bottom: 1px solid #ccc;
+    text-shadow: 0px 2px 0px rgba(250, 250, 250, .7);
+}
+
+.panel.panel-white.price:hover > .panel-heading {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, .05) inset;
+}
+
+.price.panel-white > .panel-body {
+    color: #fff;
+    background-color: #dfdfdf;
+}
+
+.price.panel-white > .panel-body .lead {
+    text-shadow: 0px 2px 0px rgba(250, 250, 250, .8);
+    color: #666;
+}
+
+.price:hover.panel-white > .panel-body .lead {
+    text-shadow: 0px 2px 0px rgba(250, 250, 250, .9);
+    color: #333;
+}
+
+.price.panel-white .list-group-item {
+    color: #333;
+    background-color: rgba(50, 50, 50, .01);
+    font-weight: 600;
+    text-shadow: 0px 1px 0px rgba(250, 250, 250, .75);
+}
+
+
+
 /*MOBIL*/
-.mobil {
+.mobil .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -15,8 +208,9 @@
 }
 
 /*SOCIAL*/
-.socialmarketing {
-
+.socialmarketing .img-responsive {
+    margin-left: auto;
+    margin-right: auto;
 }
 /*Menusor*/
 .navbar-default{
@@ -37,7 +231,8 @@
     font-size:24px;
 }
 .navbar{
-    background-color: #ffffff;
+    background-color: #fff;
+    opacity: 0.9;
     border-radius: 0px;
     border-top:0px;
     border-left:0px;
@@ -50,7 +245,7 @@
 /*Altalanos dolgok*/
 body{
     font-family: 'Oxygen', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     /*Ez se rossz : font-family: 'Open Sans Condensed', sans-serif;*/
     -webkit-animation-name: megjelenes ; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
@@ -83,11 +278,11 @@ body{
     .main{
         padding-top: 50px;
         width: 100%;
+        font-size: 16px;
     }
     h1{
         font-size: 24px;
     }
-
 }
 
 /*########*/
